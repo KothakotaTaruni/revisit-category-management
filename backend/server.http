@@ -1,0 +1,48 @@
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "john",
+    "email": "john@gmail.com",
+    "password": "password123"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "password123"
+}
+
+###
+GET http://localhost:3000/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE3NDQ0NjgyMTB9.BAN3HTt-50eTKQrDD2ImlG29oNBvdnevMTOTf5rd-UY
+
+###
+GET http://localhost:3000/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE3NDQ0NjgyMTB9.BAN3HTt-50eTKQrDD2ImlG29oNBvdnevMTOTf5rd-UY
+
+###
+POST http://localhost:3000/categories
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE3NDQ0NjgyMTB9.BAN3HTt-50eTKQrDD2ImlG29oNBvdnevMTOTf5rd-UY
+Content-Type: application/json
+
+{
+    "name": "Groceries",
+    "image_url": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "item_count": 60
+}
+
+###
+PUT http://localhost:3000/categories/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJpYXQiOjE3NDQ0NjgyMTB9.BAN3HTt-50eTKQrDD2ImlG29oNBvdnevMTOTf5rd-UY
+Content-Type: application/json
+
+{
+    "name": "Cosmetics",
+    "image_url": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29zbWV0aWNzfGVufDB8fDB8fHww",
+    "item_count": 40
+}

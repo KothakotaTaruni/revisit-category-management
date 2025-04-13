@@ -1,0 +1,30 @@
+.list-item{
+    background-color: #ffffff;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+    outline: none;
+}
+
+.image{
+    height: 200px;
+    width: 300px;
+
+}
+
+.heading{
+    font-family: "Roboto";
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+.item-text{
+    font-family: "Roboto";
+    font-size: 14px;
+    color: grey;
+    font-weight: bold;
+    margin-left: 10px;
+}
